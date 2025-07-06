@@ -1,0 +1,248 @@
+/* CSS Document */
+
+body {
+    background: #444444;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page_wrapper {
+    width: 640px;
+    margin: 30px auto 30px auto;
+    background: url('../img/page_bg.jpg') no-repeat center top;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 3px solid #F4F4EE;
+    box-shadow: 0 0 0 2px #F4F4EE;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.page_header {
+    position: relative;
+}
+
+.page_header img {
+    display: block;
+    width: 640px;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 2px solid #E2D179;
+}
+
+.header-text-overlay {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    width: 580px;
+    pointer-events: none;
+}
+
+.header-title {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 3.1em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.35);
+}
+
+.header-subtitle {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #E2D179;
+    letter-spacing: 0.12em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+}
+
+.content_row {
+    display: flex;
+    flex-direction: row;
+    width: 640px;
+    box-sizing: border-box;
+    background: none;
+    overflow: hidden;
+}
+
+.left_side {
+    width: 480px;
+    min-width: 480px;
+    max-width: 480px;
+    padding: 40px 0 40px 40px;
+    box-sizing: border-box;
+    background: #FCF8E3;
+}
+
+.right_side {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    padding: 20px 10px 10px 4px;
+    box-sizing: border-box;
+    border-left: 2px dotted #E2D179;
+    background: #FCE883;
+}
+
+.section-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    letter-spacing: 1px;
+}
+
+.section-title.nature {
+    color: #A0410D;
+}
+.section-title.earth {
+    color: #A0410D;
+    margin-top: 18px;
+}
+.section-title.life {
+    color: #A0410D;
+    margin-top: 18px;
+}
+
+.left_side p {
+    margin: 0 0 18px 0;
+    color: #333333;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.see_also_box {
+    font-size: 0.97em;
+    padding: 0 0 4px 0;
+    margin-top: 0;
+    background: #FCE883;
+}
+
+.see_also_header {
+    background: #3A3B22;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 0 7px 10px;
+    font-size: 1em;
+    border-bottom: 2px solid #E2D179;
+}
+
+.see_also_section {
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+}
+
+.see_also_title {
+    color: #595A38;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 0.97em;
+    margin-top: 10px;
+}
+
+.see_also_section ul {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 8px 0;
+}
+
+.see_also_section li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.see_also_section li::before {
+    content: "\25A0";
+    color: #595A38;
+    font-size: 0.7em;
+    margin-right: 6px;
+    display: inline-block;
+    position: relative;
+    top: 0.5px;
+}
+
+.see_also_section a, .see_also_section a:visited {
+    text-decoration: underline;
+    font-size: 0.7em;
+    transition: color 0.2s;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1.7;
+}
+
+.see_also_section a.science, .see_also_section a.science:visited {
+    color: #2D70B7;
+}
+.see_also_section a.philosophy, .see_also_section a.philosophy:visited {
+    color: #2D70B7;
+}
+.see_also_section a.org, .see_also_section a.org:visited {
+    color: #2D70B7;
+}
+
+.see_also_section a:hover {
+    text-decoration: underline;
+}
+
+.page_footer {
+    background: url('../img/footer.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page_footer span {
+    position: relative;
+    z-index: 2;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+@media (max-width: 700px) {
+    .page_wrapper, .page_footer {
+        width: 100vw;
+        min-width: 0;
+    }
+    .page_header img {
+        width: 100vw;
+        min-width: 0;
+    }
+    .content_row {
+        flex-direction: column;
+    }
+    .left_side, .right_side {
+        width: 100vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .right_side {
+        border-left: none;
+        border-top: 2px dotted #E2D179;
+    }
+}
